@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #2D5461;
+  font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;;
+}
+
+.cta-container {
+  margin: 1rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cta {
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1rem;
+  justify-content: center;
+  align-items: space-around;
+  box-shadow: gray 3px 3px 8px;
+  background-color: #C0FABE;
+  margin: 1rem;
+}
+
+.cta img {
+  max-width: 300px;
+}
+
+/*1. Text "Call to Action 1!", "Call to Action 2!", and "Call to Action 3!" should look like default paragraph text, no underlines, different colors, etc.*/
+.cta a, .cta a:visited, .cta a:hover, .cta a:focus {
+  color: #2D5461;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #D2F0FA;
+  padding: 1rem;
+}
+
+/*
+"accent" = #3A612D
+"highlight" = #D2F0FA
+"brand" = #2D5461
+*/
+
+/*1. Text "Call to Action 1!", "Call to Action 2!", and "Call to Action 3!" should look like default paragraph text, no underlines, different colors, etc.*/
+/*
+.plain-link {
+  text-decoration: none;
+  color: black;    
+}
+*/
+
+/*2. Link with clickable text "link 2" should have "accent" color on page load*/
+a.fancy-link {
+  color: #3A612D;
+}
+
+/*2. Link with clickable text "link 2" should have "highlight" color when visited*/
+a.fancy-link:visited {
+  color: #D2F0FA;
+}
+
+/*2. Link with clickable text "link 2" should have gray text shadow when user hovers or clicks on it.*/
+a.fancy-link:hover, a.fancy-link:focus {
+  text-shadow: gray 3px 3px 3px;
+}
+
+/*3. Headline text "Headline 4" should be centered and bold.*/
+section:first-of-type h2 {
+  text-align: center;
+  font-weight: bold;
+}
+/*
+.center-bold {
+  text-align: center;
+  font-weight: bold;
+}
+*/
+
+/*4. The first letter of paragraph that begins with "Lorem ipsum 1" should be twice as large as other paragraph text.*/
+.big-cap::first-letter { 
+    font-size: 200%;
+}
+
+/*5. Submit button with text "Sign Up for Email List" should have rounded corners, background of "accent" color, and text color of white.*/
+input[type="submit"] {
+  background-color: #3A612D;
+  color: white;
+  border-radius: 50px;
+}
+
+/*6. The article that starts with "Headline 3" should have a background of "highlight" color.*/
+.highlighted {
+  background-color: #D2F0FA;
+  padding: 1rem;
+}
+/*Remember, if you add a class for styling purposes, it should be reusable. For example, a class of "highlight-text" might be used for all text you'd like to style to have the "highlight" font color.*/
